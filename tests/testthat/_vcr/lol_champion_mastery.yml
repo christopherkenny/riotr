@@ -1,0 +1,29 @@
+http_interactions:
+- request:
+    method: GET
+    uri: https://na1.api.riotgames.com/lol/champion-mastery/v4/champion-masteries/by-puuid/O2q8aNv6VBlFz9ABjEoOH8g1d_KO1IQHboIuog8ORd7QOH2L8nGgsYgK-TN16ucwUQsPpihH-tLtAA/by-champion/236
+  response:
+    status: 200
+    headers:
+      date: Fri, 27 Feb 2026 03:52:51 GMT
+      content-type: application/json
+      access-control-allow-headers: User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range
+      access-control-allow-methods: GET, PUT, DELETE, POST, OPTIONS
+      access-control-allow-origin: '*'
+      access-control-expose-headers: Content-Length,Content-Range
+      set-cookie: __cf_bm=sjFN4V7P.a0AClHOL.ulS2g2v28XPsFfYFgq5b_45KI-1772164371.2633905-1.0.1.1-Gd6Kjc40dDzWIWX7DZb6.3owhtK4dMKIqnPrCUkT_MYsDpCppcxIN6xLYzxJtxHCQ_C_dirKhyCw_WH.pXsNzseKABCRbwMX8M3sicbSAT.RMKW37SOgjTm9M8FszKNS;
+        HttpOnly; Secure; Path=/; Domain=api.riotgames.com; Expires=Fri, 27 Feb 2026
+        04:22:51 GMT
+      content-encoding: gzip
+      vary: Accept-Encoding
+      x-app-rate-limit: 100:120,20:1
+      x-app-rate-limit-count: 6:120,1:1
+      x-method-rate-limit: 20000:10,1200000:600
+      x-method-rate-limit-count: 1:10,1:600
+      cf-cache-status: DYNAMIC
+      server: cloudflare
+      cf-ray: 9d44bb586c1d25dc-EWR
+    body:
+      string: '{"puuid":"O2q8aNv6VBlFz9ABjEoOH8g1d_KO1IQHboIuog8ORd7QOH2L8nGgsYgK-TN16ucwUQsPpihH-tLtAA","championId":236,"championLevel":7,"championPoints":60244,"lastPlayTime":1496900315000,"championPointsSinceLastLevel":17644,"championPointsUntilNextLevel":-6644,"markRequiredForNextLevel":1,"tokensEarned":0,"championSeasonMilestone":0,"nextSeasonMilestone":{"requireGradeCounts":{"A-":1},"rewardMarks":1,"bonus":false,"totalGamesRequires":1}}'
+  recorded_at: 2026-02-27 03:52:51
+recorded_with: VCR-vcr/2.1.0

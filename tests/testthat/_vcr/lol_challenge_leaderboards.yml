@@ -1,0 +1,29 @@
+http_interactions:
+- request:
+    method: GET
+    uri: https://na1.api.riotgames.com/lol/challenges/v1/challenges/1/leaderboards/by-level/GRANDMASTER
+  response:
+    status: 200
+    headers:
+      date: Fri, 27 Feb 2026 03:52:29 GMT
+      content-type: application/json
+      access-control-allow-headers: User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range
+      access-control-allow-methods: GET, PUT, DELETE, POST, OPTIONS
+      access-control-allow-origin: '*'
+      access-control-expose-headers: Content-Length,Content-Range
+      set-cookie: __cf_bm=zksE.8M8sFNRZV7AyaY.8ZNrKiMSIMaOv_4qzuNKVa8-1772164349.3215547-1.0.1.1-njK72ijkTNqatvp3MM93SE.xQ0flIwHGFq4TuNsByym9mab7hjNChz7hLK2HUb_XKztQ0Wnczx3PrLAvktmwGa.HjVQNn7.qtMoRhqAFafNtzUBtmVZwegVUNT4PX6HF;
+        HttpOnly; Secure; Path=/; Domain=api.riotgames.com; Expires=Fri, 27 Feb 2026
+        04:22:29 GMT
+      content-encoding: gzip
+      vary: Accept-Encoding
+      x-app-rate-limit: 100:120,20:1
+      x-app-rate-limit-count: 3:120,1:1
+      x-method-rate-limit: 20000:10,1200000:600
+      x-method-rate-limit-count: 1:10,1:600
+      cf-cache-status: DYNAMIC
+      server: cloudflare
+      cf-ray: 9d44bacf4f5ac674-EWR
+    body:
+      string: '[]'
+  recorded_at: 2026-02-27 03:52:29
+recorded_with: VCR-vcr/2.1.0

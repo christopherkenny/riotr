@@ -1,0 +1,37 @@
+http_interactions:
+- request:
+    method: GET
+    uri: https://na1.api.riotgames.com/lol/summoner/v4/summoners/by-puuid/O2q8aNv6VBlFz9ABjEoOH8g1d_KO1IQHboIuog8ORd7QOH2L8nGgsYgK-TN16ucwUQsPpihH-tLtAA
+  response:
+    status: 200
+    headers:
+      access-control-allow-headers: User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range
+      access-control-allow-methods: GET, PUT, DELETE, POST, OPTIONS
+      access-control-allow-origin: '*'
+      access-control-expose-headers: Content-Length,Content-Range
+      cache-control: no-cache, no-store, max-age=0, must-revalidate
+      cf-cache-status: DYNAMIC
+      cf-ray: 9d44ca6b8b5d3448-EWR
+      content-encoding: gzip
+      content-type: application/json
+      date: Fri, 27 Feb 2026 04:03:08 GMT
+      expires: '0'
+      pragma: no-cache
+      server: cloudflare
+      set-cookie: __cf_bm=JMfg.542TYY41L.hFVNAujupY0KVpULq.zw13csiZ3E-1772164988.7283764-1.0.1.1-K4fq6ooax21NjEwELf6cH_CmaKDzqc1cBpD1myg8Djf9TI7kJ9l.8lCCKaI8qQtuIqqXBW5bMMAcxUupWBMC2DKUn2dOgWgHMjWt1hdplc1zbidJsuoRbEC7Nuy8cdRr;
+        HttpOnly; Secure; Path=/; Domain=api.riotgames.com; Expires=Fri, 27 Feb 2026
+        04:33:08 GMT
+      vary:
+      - Access-Control-Request-Headers
+      - accept-encoding
+      x-app-rate-limit: 100:120,20:1
+      x-app-rate-limit-count: 2:120,1:1
+      x-content-type-options: nosniff
+      x-frame-options: DENY
+      x-method-rate-limit: 2000:60
+      x-method-rate-limit-count: 1:60
+      x-xss-protection: '0'
+    body:
+      string: '{"puuid":"O2q8aNv6VBlFz9ABjEoOH8g1d_KO1IQHboIuog8ORd7QOH2L8nGgsYgK-TN16ucwUQsPpihH-tLtAA","profileIconId":654,"revisionDate":1526260861000,"summonerLevel":31}'
+  recorded_at: 2026-02-27 04:03:09
+recorded_with: VCR-vcr/2.1.0

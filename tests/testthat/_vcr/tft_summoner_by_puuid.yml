@@ -1,0 +1,37 @@
+http_interactions:
+- request:
+    method: GET
+    uri: https://na1.api.riotgames.com/tft/summoner/v1/summoners/by-puuid/GmNPNjUbzbWN8YIA79V4p308eFpf21xPO2Lw8o2xJTJMPW83W54t4GfyfpwOn7-hBz5c3MHpg-Dc3w
+  response:
+    status: 200
+    headers:
+      access-control-allow-headers: User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range
+      access-control-allow-methods: GET, PUT, DELETE, POST, OPTIONS
+      access-control-allow-origin: '*'
+      access-control-expose-headers: Content-Length,Content-Range
+      cache-control: no-cache, no-store, max-age=0, must-revalidate
+      cf-cache-status: DYNAMIC
+      cf-ray: 9d44bf9c3f0a6180-EWR
+      content-encoding: gzip
+      content-type: application/json
+      date: Fri, 27 Feb 2026 03:55:46 GMT
+      expires: '0'
+      pragma: no-cache
+      server: cloudflare
+      set-cookie: __cf_bm=ngC2C16WNK8NXYxVErY1FoYfbtu_fv9M.zfexGW9egs-1772164545.9605699-1.0.1.1-0n4Zrt_XF6625aer8Keqb47KfZy4.O903_uHbXpcMgqurKrs2UUnknhw8MBkdGkR1bKEptGeuWj2u87wp1q0U9vS6C.CK7vzVQyRFG1qBzpAxUMaY8qjmzyq.i6E5Xit;
+        HttpOnly; Secure; Path=/; Domain=api.riotgames.com; Expires=Fri, 27 Feb 2026
+        04:25:46 GMT
+      vary:
+      - Access-Control-Request-Headers
+      - accept-encoding
+      x-app-rate-limit: 100:120,20:1
+      x-app-rate-limit-count: 7:120,1:1
+      x-content-type-options: nosniff
+      x-frame-options: DENY
+      x-method-rate-limit: 2000:60
+      x-method-rate-limit-count: 1:60
+      x-xss-protection: '0'
+    body:
+      string: '{"puuid":"GmNPNjUbzbWN8YIA79V4p308eFpf21xPO2Lw8o2xJTJMPW83W54t4GfyfpwOn7-hBz5c3MHpg-Dc3w","profileIconId":1385,"revisionDate":1772115646000,"summonerLevel":463}'
+  recorded_at: 2026-02-27 03:55:46
+recorded_with: VCR-vcr/2.1.0

@@ -1,0 +1,1834 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Riot Developer Portal</title>
+  <link rel="icon" href="https://static.developer.riotgames.com/img/favicon.png" type="image/ico" />
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" type="text/css" href="https://s.lolstatic.com/awesomefonts/1.0.0/lol-fonts.css">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/static/js/remark/css/bootstrap.min-v2.2.0.5c11657f7924.css">
+  <link rel="stylesheet" href="/static/js/remark/css/bootstrap-extend.min-v2.2.0.3219f69d7c80.css">
+  <link rel="stylesheet" href="/static/css/site.min-v2.2.0.53b31d7907ef.css">
+  <link rel="stylesheet" href="/static/js/chosen_v1.6.2/chosen.min.91f869a82435.css">
+
+  <!-- Plugins -->
+  <!-- <link rel="stylesheet" href="/static/js/remark/vendor/animsition/animsition.min-v2.2.0.5273774fb4fb.css">
+  <link rel="stylesheet" href="/static/js/remark/vendor/asscrollable/asScrollable.min-v2.2.0.a52f6c3cc79b.css"> -->
+
+  <!-- Plugins For This Page -->
+  <!-- <link rel="stylesheet" href="/static/js/remark/vendor/bootstrap-tokenfield/bootstrap-tokenfield.min-v2.2.0.b9d1aa22fb12.css"> -->
+
+  <!-- Page -->
+  <!-- <link rel="stylesheet" href="/static/examples/css/dashboard/v1.min-v2.2.0.9b9a255021da.css"> -->
+
+  <!-- Fonts -->
+  <!-- <link rel="stylesheet" href="/static/js/remark/fonts/web-icons/web-icons.min-v2.2.0.6f977de1a08f.css"> -->
+  
+  <link href="/static/css/main.811502539640.css" rel="stylesheet" type="text/css" />
+
+    <!-- Scripts -->
+  <script src="https://cmp.osano.com/16BZ95S4qp9Kl2gUA/c84de61e-21d7-4a4a-9591-3d3a28fb5b1d/osano.js"></script>
+  <script src="/static/js/clipboard.3e5e0fa949e0.js"></script>
+  <script src="/static/js/remark/vendor/jquery/jquery.min.c07f2267a050.js"></script>
+  <script src="/static/js/chosen_v1.6.2/chosen.jquery.min.63fec16cd0e7.js"></script>
+  <script src="/static/js/remark/vendor/modernizr/modernizr.min.1258d3cdc715.js"></script>
+  <script src="/static/js/google_chart.924e855efca7.js"></script>
+  <script src="/static/js/RiotGraphs.8778fb9c067b.js"></script>
+  <script src="/static/js/lib/vue.min.e92b692efff8.js"></script>
+  <script src="/static/js/lib/vue.resource.min.dd2bcbc0405a.js"></script>
+  <script src="/static/js/vue_components/component.graph.b55099af41c1.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P6MFXZQDPE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-P6MFXZQDPE');
+  </script>
+  <script type="text/javascript">
+      (function(t,l){
+          let w=window,d=document,s=d.createElement("script"),f=d.getElementsByTagName("script")[0];
+          w[t]=w[t]||function(){(w["_rgea"]=w["_rgea"]||[["uts",new Date()]]).push(Array.prototype.slice.call(arguments));w.RGEA&&w.RGEA.p();}
+          s.type="text/javascript"; s.async=true; s.defer=true; s.src=l; f.parentNode.insertBefore(s,f);
+      })("rgea", "https://static.developer.riotgames.com/js/rgea.min.js");
+
+      rgea("propertyId", "RGEA0001-086f1365-1c20-4f66-8ea6-7f01a5a9479d");
+      rgea("anonymous", false);
+  </script>
+
+
+</head>
+
+<body class="riot-player">
+
+
+<nav class="site-navbar navbar navbar-default navbar-fixed-top navbar-mega" role="navigation">
+    <div class="wrapper">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle hamburger hamburger-close navbar-toggle-left hided"
+            data-toggle="menubar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="hamburger-bar"></span>
+            </button>
+            <button type="button" class="navbar-toggle collapsed" data-target="#site-navbar-collapse"
+            data-toggle="collapse">
+                <i class="icon wb-more-horizontal" style="color:black;" aria-hidden="true"></i>
+            </button>
+            <a href="/">
+                <div class="navbar-brand navbar-brand-center site-gridmenu-toggle" data-toggle="gridmenu">
+                <span class="riot-logo"></span>
+                <span class="navbar-brand-text hidden-xs"> Developer</span>
+                </div>
+            </a>
+        </div>
+        <div class="navbar-container container-fluid">
+            <!-- Navbar Collapse -->
+            <div class="collapse navbar-collapse navbar-collapse-toolbar" id="site-navbar-collapse">
+                <!-- Navbar Toolbar -->
+                <ul class="nav navbar-nav navbar-center">
+                    
+                    <li class="dropdown navbar-center-inline-block hover-dropdown">
+                        <a  href="/apis"   aria-expanded="false"
+                        data-animation="scale-up" role="button">APIs</a>
+                        <ul class="dropdown-menu position-absolute" role="menu">
+                        
+                        </ul>
+                    </li>
+                    
+                    <li class="dropdown navbar-center-inline-block hover-dropdown">
+                        <a   aria-expanded="false"
+                        data-animation="scale-up" role="button">Docs</a>
+                        <ul class="dropdown-menu position-absolute" role="menu">
+                        
+                            
+                            <li role="presentation">
+                                <a href="/docs/portal"  role="menuitem">Developer Portal</a>
+                            </li>
+                            
+                        
+                            
+                            <li role="presentation">
+                                <a href="/docs/lol"  role="menuitem">League of Legends</a>
+                            </li>
+                            
+                        
+                            
+                            <li role="presentation">
+                                <a href="/docs/lor"  role="menuitem">Legends of Runeterra</a>
+                            </li>
+                            
+                        
+                            
+                            <li role="presentation">
+                                <a href="/docs/tft"  role="menuitem">Teamfight Tactics</a>
+                            </li>
+                            
+                        
+                            
+                            <li role="presentation">
+                                <a href="/docs/valorant"  role="menuitem">Valorant</a>
+                            </li>
+                            
+                        
+                            
+                            <li role="presentation">
+                                <a href="/docs/riftbound"  role="menuitem">Riftbound</a>
+                            </li>
+                            
+                        
+                            
+                            <li role="presentation">
+                                <a href="/docs/2xko"  role="menuitem">2KXO</a>
+                            </li>
+                            
+                        
+                        </ul>
+                    </li>
+                    
+                    <li class="dropdown navbar-center-inline-block hover-dropdown">
+                        <a   aria-expanded="false"
+                        data-animation="scale-up" role="button">Policies</a>
+                        <ul class="dropdown-menu position-absolute" role="menu">
+                        
+                            
+                            <li role="presentation">
+                                <a href="/policies/general"  role="menuitem">General</a>
+                            </li>
+                            
+                        
+                            
+                            <li role="presentation">
+                                <a href="/policies/game-specific"  role="menuitem">Game Specific</a>
+                            </li>
+                            
+                        
+                            
+                            <li role="presentation">
+                                <a href="/policies/riftbound"  role="menuitem">Riftbound</a>
+                            </li>
+                            
+                        
+                        </ul>
+                    </li>
+                    
+                    <li class="dropdown navbar-center-inline-block hover-dropdown">
+                        <a  href="/docs/faqs"   aria-expanded="false"
+                        data-animation="scale-up" role="button">Faqs</a>
+                        <ul class="dropdown-menu position-absolute" role="menu">
+                        
+                        </ul>
+                    </li>
+                    
+                    <li class="dropdown navbar-center-inline-block hover-dropdown">
+                        <a   aria-expanded="false"
+                        data-animation="scale-up" role="button">Channels</a>
+                        <ul class="dropdown-menu position-absolute" role="menu">
+                        
+                            
+                            <li role="presentation">
+                                <a href="https://www.riotgames.com/en/DevRel"  target="_blank"  role="menuitem">Blog</a>
+                            </li>
+                            
+                        
+                            
+                            <li role="presentation">
+                                <a href="https://twitter.com/RiotGamesDevRel"  target="_blank"  role="menuitem">Twitter</a>
+                            </li>
+                            
+                        
+                            
+                            <li role="presentation">
+                                <a href="https://discord.gg/riotgamesdevrel"  target="_blank"  role="menuitem">Discord</a>
+                            </li>
+                            
+                        
+                            
+                            <li role="presentation">
+                                <a href="https://github.com/RiotGames/developer-relations/issues"  target="_blank"  role="menuitem">Issue Tracker</a>
+                            </li>
+                            
+                        
+                        </ul>
+                    </li>
+                    
+                    <li class="dropdown navbar-center-inline-block hover-dropdown">
+                        <a  href="https://support-developer.riotgames.com"  target="_blank" style="color: red;" aria-expanded="false"
+                        data-animation="scale-up" role="button">Support</a>
+                        <ul class="dropdown-menu position-absolute" role="menu">
+                        
+                        </ul>
+                    </li>
+                    
+                    
+                </ul>
+                <!-- Navbar Toolbar Right -->
+                
+                <ul class="nav navbar-toolbar navbar-right navbar-toolbar-right">
+                    <li class="dropdown">
+                        <a class="navbar-avatar dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false"
+                        data-animation="scale-up" role="button">
+                            <span class="avatar avatar-online">
+                                <img src="https://static.developer.riotgames.com/img/icon.png">
+                                
+                            </span>
+                            <h3 class="admin-title">Pihris</h3>
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            
+                            <li role="presentation">
+                                <a href="/" role="menuitem">Dashboard</a>
+                            </li>
+                            <li role="presentation">
+                                <a href="/apps" role="menuitem">Apps</a>
+                            </li>
+                            <li role="presentation">
+                                <a href="/groups" role="menuitem">Groups</a>
+                            </li>
+                            <li role="presentation">
+                                <a href="/logout" role="menuitem">Logout</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                
+            </div>
+            <!-- Site Navbar Seach -->
+            <div class="collapse navbar-search-overlap" id="site-navbar-search">
+          <form role="search">
+            <div class="form-group">
+              <div class="input-search">
+                <i class="input-search-icon wb-search" aria-hidden="true"></i>
+                <input type="text" class="form-control" name="site-search" placeholder="Search...">
+                <button type="button" class="input-search-close icon wb-close" data-target="#site-navbar-search"
+                data-toggle="collapse" aria-label="Close"></button>
+              </div>
+            </div>
+          </form>
+        </div>
+        </div>
+    </div>
+</nav>
+
+
+
+
+  <div class="page ">
+    <div class="page-content padding-30-main container-fluid">
+      
+
+
+
+<!-- Side Nav Bar -->
+<div class="site-menubar">
+  <div class="sticky-side">
+    <div class="scrollable-container">
+      <ul class="app-nav-bar">
+	
+	  <li class="list-group-item list-group-item--bold list-group-messages
+		      active ">
+		     <a href="/app/545129/info">
+		       
+			 Development API Key
+		       
+		     </a>
+	  </li>
+	
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Main view -->
+<style>
+  table.table {
+    margin: 15px;
+    width: 95%
+  }
+  .rate_limit {
+    margin: 0px;
+    width: 100%;
+  }
+  .rate_limit td {
+    padding: 0px;
+    padding-left: 4px;
+  }
+  .path_filter {
+    margin-left: 15px;
+    margin-top: 0px;
+    width: 50%;
+  }
+  .path {
+    width: 75%
+  }
+  .path a {
+    margin-left: 10px;
+  }
+  .api {
+    margin-left: 18px
+  }
+  .method {
+    height: 61px
+  }
+  .http_method {
+    text-transform: uppercase;
+    background-color: #DC291E;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    width: 50px;
+    font-size: 1em;
+    text-align: center;
+    padding: 3px 0 4px 0;
+  }
+  .rate_limit_td {
+    width: 50px;
+  }
+</style>
+
+<script>
+</script>
+
+<div class="main-view">
+  <div class="padding-left-350">
+    <div style="margin-bottom:20px;">
+	<ul class="nav nav-tabs nav-tabs-line">
+	
+
+	
+
+	
+		<li  class="active" >
+		  <a href="/app/545129/apis">APIs</a>
+		</li>
+	
+
+	
+	</ul>
+</div>
+
+    <script src="/static/js/app_apis.8d9dc6328d1d.js"></script>
+
+    <div class="panel padding-20" style="overflow:auto;">
+      <h4>
+        
+          <span style="color: #dc291e">Development Key</span>
+        
+        has access to 60 methods
+      </h4>
+
+      <div class="row">
+	<input
+          type='text'
+          id="filter"
+          placeholder="Filter by path"
+          class="path_filter">
+        </input>
+
+        
+          <div class='api_section'>
+            <h3 class='api'>champion-v3</h3>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>
+                    Method
+                  </th>
+                  <th>Rate Limits</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr class='method'>
+                    <td class='path'>
+                      
+                      <span class='http_method'>GET</span>
+                      <a
+                        href='/apis#champion-v3/GET_getChampionInfo'>
+                        /lol/platform/v3/champion-rotations
+                      </a>
+                    </td>
+                    <td class='rate_limit_td'>
+                    
+                      30 requests every 10 seconds<br/>
+                    
+                      500 requests every 10 minutes<br/>
+                    
+                    </td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          </div>
+        
+          <div class='api_section'>
+            <h3 class='api'>summoner-v4</h3>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>
+                    Method
+                  </th>
+                  <th>Rate Limits</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr class='method'>
+                    <td class='path'>
+                      
+                      <span class='http_method'>GET</span>
+                      <a
+                        href='/apis#summoner-v4/GET_getByPUUID'>
+                        /lol/summoner/v4/summoners/by-puuid/{encryptedPUUID}
+                      </a>
+                    </td>
+                    <td class='rate_limit_td'>
+                    
+                      1600 requests every 1 minutes<br/>
+                    
+                    </td>
+                  </tr>
+                
+                  <tr class='method'>
+                    <td class='path'>
+                      
+                      <span class='http_method'>GET</span>
+                      <a
+                        href='/apis#summoner-v4/GET_getByAccessToken'>
+                        /lol/summoner/v4/summoners/me
+                      </a>
+                    </td>
+                    <td class='rate_limit_td'>
+                    
+                      20000 requests every 10 seconds<br/>
+                    
+                      1200000 requests every 10 minutes<br/>
+                    
+                    </td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          </div>
+        
+          <div class='api_section'>
+            <h3 class='api'>league-v4</h3>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>
+                    Method
+                  </th>
+                  <th>Rate Limits</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr class='method'>
+                    <td class='path'>
+                      
+                      <span class='http_method'>GET</span>
+                      <a
+                        href='/apis#league-v4/GET_getChallengerLeague'>
+                        /lol/league/v4/challengerleagues/by-queue/{queue}
+                      </a>
+                    </td>
+                    <td class='rate_limit_td'>
+                    
+                      30 requests every 10 seconds<br/>
+                    
+                      500 requests every 10 minutes<br/>
+                    
+                    </td>
+                  </tr>
+                
+                  <tr class='method'>
+                    <td class='path'>
+                      
+                      <span class='http_method'>GET</span>
+                      <a
+                        href='/apis#league-v4/GET_getLeagueById'>
+                        /lol/league/v4/leagues/{leagueId}
+                      </a>
+                    </td>
+                    <td class='rate_limit_td'>
+                    
+                      500 requests every 10 seconds<br/>
+                    
+                    </td>
+                  </tr>
+                
+                  <tr class='method'>
+                    <td class='path'>
+                      
+                      <span class='http_method'>GET</span>
+                      <a
+                        href='/apis#league-v4/GET_getMasterLeague'>
+                        /lol/league/v4/masterleagues/by-queue/{queue}
+                      </a>
+                    </td>
+                    <td class='rate_limit_td'>
+                    
+                      30 requests every 10 seconds<br/>
+                    
+                      500 requests every 10 minutes<br/>
+                    
+                    </td>
+                  </tr>
+                
+                  <tr class='method'>
+                    <td class='path'>
+                      
+                      <span class='http_method'>GET</span>
+                      <a
+                        href='/apis#league-v4/GET_getGrandmasterLeague'>
+                        /lol/league/v4/grandmasterleagues/by-queue/{queue}
+                      </a>
+                    </td>
+                    <td class='rate_limit_td'>
+                    
+                      30 requests every 10 seconds<br/>
+                    
+                      500 requests every 10 minutes<br/>
+                    
+                    </td>
+                  </tr>
+                
+                  <tr class='method'>
+                    <td class='path'>
+                      
+                      <span class='http_method'>GET</span>
+                      <a
+                        href='/apis#league-v4/GET_getLeagueEntries'>
+                        /lol/league/v4/entries/{queue}/{tier}/{division}
+                      </a>
+                    </td>
+                    <td class='rate_limit_td'>
+                    
+                      50 requests every 10 seconds<br/>
+                    
+                    </td>
+                  </tr>
+                
+                  <tr class='method'>
+                    <td class='path'>
+                      
+                      <span class='http_method'>GET</span>
+                      <a
+                        href='/apis#league-v4/GET_getLeagueEntriesByPUUID'>
+                        /lol/league/v4/entries/by-puuid/{encryptedPUUID}
+                      </a>
+                    </td>
+                    <td class='rate_limit_td'>
+                    
+                      20000 requests every 10 seconds<br/>
+                    
+                      1200000 requests every 10 minutes<br/>
+                    
+                    </td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          </div>
+        
+          <div class='api_section'>
+            <h3 class='api'>league-exp-v4</h3>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>
+                    Method
+                  </th>
+                  <th>Rate Limits</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr class='method'>
+                    <td class='path'>
+                      
+                      <span class='http_method'>GET</span>
+                      <a
+                        href='/apis#league-exp-v4/GET_getLeagueEntries'>
+                        /lol/league-exp/v4/entries/{queue}/{tier}/{division}
+                      </a>
+                    </td>
+                    <td class='rate_limit_td'>
+                    
+                      50 requests every 10 seconds<br/>
+                    
+                    </td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          </div>
+        
+          <div class='api_section'>
+            <h3 class='api'>tft-match-v1</h3>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>
+                    Method
+                  </th>
+                  <th>Rate Limits</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr class='method'>
+                    <td class='path'>
+                      
+                      <span class='http_method'>GET</span>
+                      <a
+                        href='/apis#tft-match-v1/GET_getMatch'>
+                        /tft/match/v1/matches/{matchId}
+                      </a>
+                    </td>
+                    <td class='rate_limit_td'>
+                    
+                      250 requests every 10 seconds<br/>
+                    
+                    </td>
+                  </tr>
+                
+                  <tr class='method'>
+                    <td class='path'>
+                      
+                      <span class='http_method'>GET</span>
+                      <a
+                        href='/apis#tft-match-v1/GET_getMatchIdsByPUUID'>
+                        /tft/match/v1/matches/by-puuid/{puuid}/ids
+                      </a>
+                    </td>
+                    <td class='rate_limit_td'>
+                    
+                      600 requests every 10 seconds<br/>
+                    
+                    </td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          </div>
+        
+          <div class='api_section'>
+            <h3 class='api'>tft-summoner-v1</h3>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>
+                    Method
+                  </th>
+                  <th>Rate Limits</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr class='method'>
+                    <td class='path'>
+                      
+                      <span class='http_method'>GET</span>
+                      <a
+                        href='/apis#tft-summoner-v1/GET_getByPUUID'>
+                        /tft/summoner/v1/summoners/by-puuid/{encryptedPUUID}
+                      </a>
+                    </td>
+                    <td class='rate_limit_td'>
+                    
+                      1600 requests every 1 minutes<br/>
+                    
+                    </td>
+                  </tr>
+                
+                  <tr class='method'>
+                    <td class='path'>
+                      
+                      <span class='http_method'>GET</span>
+                      <a
+                        href='/apis#tft-summoner-v1/GET_getByAccessToken'>
+                        /tft/summoner/v1/summoners/me
+                      </a>
+                    </td>
+                    <td class='rate_limit_td'>
+                    
+                      20000 requests every 10 seconds<br/>
+                    
+                      1200000 requests every 10 minutes<br/>
+                    
+                    </td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          </div>
+        
+          <div class='api_section'>
+            <h3 class='api'>tft-league-v1</h3>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>
+                    Method
+                  </th>
+                  <th>Rate Limits</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr class='method'>
+                    <td class='path'>
+                      
+                      <span class='http_method'>GET</span>
+                      <a
+                        href='/apis#tft-league-v1/GET_getLeagueEntries'>
+                        /tft/league/v1/entries/{tier}/{division}
+                      </a>
+                    </td>
+                    <td class='rate_limit_td'>
+                    
+                      250 requests every 10 seconds<br/>
+                    
+                    </td>
+                  </tr>
+                
+                  <tr class='method'>
+                    <td class='path'>
+                      
+                      <span class='http_method'>GET</span>
+                      <a
+                        href='/apis#tft-league-v1/GET_getChallengerLeague'>
+                        /tft/league/v1/challenger
+                      </a>
+                    </td>
+                    <td class='rate_limit_td'>
+                    
+                      30 requests every 10 seconds<br/>
+                    
+                      500 requests every 10 minutes<br/>
+                    
+                    </td>
+                  </tr>
+                
+                  <tr class='method'>
+                    <td class='path'>
+                      
+                      <span class='http_method'>GET</span>
+                      <a
+                        href='/apis#tft-league-v1/GET_getGrandmasterLeague'>
+                        /tft/league/v1/grandmaster
+                      </a>
+                    </td>
+                    <td class='rate_limit_td'>
+                    
+                      30 requests every 10 seconds<br/>
+                    
+                      500 requests every 10 minutes<br/>
+                    
+                    </td>
+                  </tr>
+                
+                  <tr class='method'>
+                    <td class='path'>
+                      
+                      <span class='http_method'>GET</span>
+                      <a
+                        href='/apis#tft-league-v1/GET_getMasterLeague'>
+                        /tft/league/v1/master
+                      </a>
+                    </td>
+                    <td class='rate_limit_td'>
+                    
+                      30 requests every 10 seconds<br/>
+                    
+                      500 requests every 10 minutes<br/>
+                    
+                    </td>
+                  </tr>
+                
+                  <tr class='method'>
+                    <td class='path'>
+                      
+                      <span class='http_method'>GET</span>
+                      <a
+                        href='/apis#tft-league-v1/GET_getTopRatedLadder'>
+                        /tft/league/v1/rated-ladders/{queue}/top
+                      </a>
+                    </td>
+                    <td class='rate_limit_td'>
+                    
+                      20000 requests every 10 seconds<br/>
+                    
+                      1200000 requests every 10 minutes<br/>
+                    
+                    </td>
+                  </tr>
+                
+                  <tr class='method'>
+                    <td class='path'>
+                      
+                      <span class='http_method'>GET</span>
+                      <a
+                        href='/apis#tft-league-v1/GET_getLeagueEntriesByPUUID'>
+                        /tft/league/v1/by-puuid/{puuid}
+                      </a>
+                    </td>
+                    <td class='rate_limit_td'>
+                    
+                      20000 requests every 10 seconds<br/>
+                    
+                      1200000 requests every 10 minutes<br/>
+                    
+                    </td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          </div>
+        
+          <div class='api_section'>
+            <h3 class='api'>lor-ranked-v1</h3>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>
+                    Method
+                  </th>
+                  <th>Rate Limits</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr class='method'>
+                    <td class='path'>
+                      
+                      <span class='http_method'>GET</span>
+                      <a
+                        href='/apis#lor-ranked-v1/GET_getLeaderboards'>
+                        /lor/ranked/v1/leaderboards
+                      </a>
+                    </td>
+                    <td class='rate_limit_td'>
+                    
+                      30 requests every 10 seconds<br/>
+                    
+                      500 requests every 10 minutes<br/>
+                    
+                    </td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          </div>
+        
+          <div class='api_section'>
+            <h3 class='api'>clash-v1</h3>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>
+                    Method
+                  </th>
+                  <th>Rate Limits</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr class='method'>
+                    <td class='path'>
+                      
+                      <span class='http_method'>GET</span>
+                      <a
+                        href='/apis#clash-v1/GET_getTeamById'>
+                        /lol/clash/v1/teams/{teamId}
+                      </a>
+                    </td>
+                    <td class='rate_limit_td'>
+                    
+                      200 requests every 1 minutes<br/>
+                    
+                    </td>
+                  </tr>
+                
+                  <tr class='method'>
+                    <td class='path'>
+                      
+                      <span class='http_method'>GET</span>
+                      <a
+                        href='/apis#clash-v1/GET_getTournamentById'>
+                        /lol/clash/v1/tournaments/{tournamentId}
+                      </a>
+                    </td>
+                    <td class='rate_limit_td'>
+                    
+                      10 requests every 1 minutes<br/>
+                    
+                    </td>
+                  </tr>
+                
+                  <tr class='method'>
+                    <td class='path'>
+                      
+                      <span class='http_method'>GET</span>
+                      <a
+                        href='/apis#clash-v1/GET_getTournamentByTeam'>
+                        /lol/clash/v1/tournaments/by-team/{teamId}
+                      </a>
+                    </td>
+                    <td class='rate_limit_td'>
+                    
+                      200 requests every 1 minutes<br/>
+                    
+                    </td>
+                  </tr>
+                
+                  <tr class='method'>
+                    <td class='path'>
+                      
+                      <span class='http_method'>GET</span>
+                      <a
+                        href='/apis#clash-v1/GET_getTournaments'>
+                        /lol/clash/v1/tournaments
+                      </a>
+                    </td>
+                    <td class='rate_limit_td'>
+                    
+                      10 requests every 1 minutes<br/>
+                    
+                    </td>
+                  </tr>
+                
+                  <tr class='method'>
+                    <td class='path'>
+                      
+                      <span class='http_method'>GET</span>
+                      <a
+                        href='/apis#clash-v1/GET_getPlayersByPUUID'>
+                        /lol/clash/v1/players/by-puuid/{puuid}
+                      </a>
+                    </td>
+                    <td class='rate_limit_td'>
+                    
+                      20000 requests every 10 seconds<br/>
+                    
+                      1200000 requests every 10 minutes<br/>
+                    
+                    </td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          </div>
+        
+          <div class='api_section'>
+            <h3 class='api'>val-content-v1</h3>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>
+                    Method
+                  </th>
+                  <th>Rate Limits</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr class='method'>
+                    <td class='path'>
+                      
+                      <span class='http_method'>GET</span>
+                      <a
+                        href='/apis#val-content-v1/GET_getContent'>
+                        /val/content/v1/contents
+                      </a>
+                    </td>
+                    <td class='rate_limit_td'>
+                    
+                      250 requests every 10 seconds<br/>
+                    
+                    </td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          </div>
+        
+          <div class='api_section'>
+            <h3 class='api'>account-v1</h3>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>
+                    Method
+                  </th>
+                  <th>Rate Limits</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr class='method'>
+                    <td class='path'>
+                      
+                      <span class='http_method'>GET</span>
+                      <a
+                        href='/apis#account-v1/GET_getByRiotId'>
+                        /riot/account/v1/accounts/by-riot-id/{gameName}/{tagLine}
+                      </a>
+                    </td>
+                    <td class='rate_limit_td'>
+                    
+                      1000 requests every 1 minutes<br/>
+                    
+                    </td>
+                  </tr>
+                
+                  <tr class='method'>
+                    <td class='path'>
+                      
+                      <span class='http_method'>GET</span>
+                      <a
+                        href='/apis#account-v1/GET_getByPuuid'>
+                        /riot/account/v1/accounts/by-puuid/{puuid}
+                      </a>
+                    </td>
+                    <td class='rate_limit_td'>
+                    
+                      1000 requests every 1 minutes<br/>
+                    
+                    </td>
+                  </tr>
+                
+                  <tr class='method'>
+                    <td class='path'>
+                      
+                      <span class='http_method'>GET</span>
+                      <a
+                        href='/apis#account-v1/GET_getActiveShard'>
+                        /riot/account/v1/active-shards/by-game/{game}/by-puuid/{puuid}
+                      </a>
+                    </td>
+                    <td class='rate_limit_td'>
+                    
+                      20000 requests every 10 seconds<br/>
+                    
+                      1200000 requests every 10 minutes<br/>
+                    
+                    </td>
+                  </tr>
+                
+                  <tr class='method'>
+                    <td class='path'>
+                      
+                      <span class='http_method'>GET</span>
+                      <a
+                        href='/apis#account-v1/GET_getByPuuidEsports'>
+                        /riot/account/v1/accounts/by-puuid/{puuid}
+                      </a>
+                    </td>
+                    <td class='rate_limit_td'>
+                    
+                      20000 requests every 10 seconds<br/>
+                    
+                      1200000 requests every 10 minutes<br/>
+                    
+                    </td>
+                  </tr>
+                
+                  <tr class='method'>
+                    <td class='path'>
+                      
+                      <span class='http_method'>GET</span>
+                      <a
+                        href='/apis#account-v1/GET_getByRiotIdEsports'>
+                        /riot/account/v1/accounts/by-riot-id/{gameName}/{tagLine}
+                      </a>
+                    </td>
+                    <td class='rate_limit_td'>
+                    
+                      20000 requests every 10 seconds<br/>
+                    
+                      1200000 requests every 10 minutes<br/>
+                    
+                    </td>
+                  </tr>
+                
+                  <tr class='method'>
+                    <td class='path'>
+                      
+                      <span class='http_method'>GET</span>
+                      <a
+                        href='/apis#account-v1/GET_getActiveRegion'>
+                        /riot/account/v1/region/by-game/{game}/by-puuid/{puuid}
+                      </a>
+                    </td>
+                    <td class='rate_limit_td'>
+                    
+                      20000 requests every 10 seconds<br/>
+                    
+                      1200000 requests every 10 minutes<br/>
+                    
+                    </td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          </div>
+        
+          <div class='api_section'>
+            <h3 class='api'>lor-match-v1</h3>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>
+                    Method
+                  </th>
+                  <th>Rate Limits</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr class='method'>
+                    <td class='path'>
+                      
+                      <span class='http_method'>GET</span>
+                      <a
+                        href='/apis#lor-match-v1/GET_getMatch'>
+                        /lor/match/v1/matches/{matchId}
+                      </a>
+                    </td>
+                    <td class='rate_limit_td'>
+                    
+                      100 requests every 1 hours<br/>
+                    
+                    </td>
+                  </tr>
+                
+                  <tr class='method'>
+                    <td class='path'>
+                      
+                      <span class='http_method'>GET</span>
+                      <a
+                        href='/apis#lor-match-v1/GET_getMatchIdsByPUUID'>
+                        /lor/match/v1/matches/by-puuid/{puuid}/ids
+                      </a>
+                    </td>
+                    <td class='rate_limit_td'>
+                    
+                      200 requests every 1 hours<br/>
+                    
+                    </td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          </div>
+        
+          <div class='api_section'>
+            <h3 class='api'>val-ranked-v1</h3>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>
+                    Method
+                  </th>
+                  <th>Rate Limits</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr class='method'>
+                    <td class='path'>
+                      
+                      <span class='http_method'>GET</span>
+                      <a
+                        href='/apis#val-ranked-v1/GET_getLeaderboard'>
+                        /val/ranked/v1/leaderboards/by-act/{actId}
+                      </a>
+                    </td>
+                    <td class='rate_limit_td'>
+                    
+                      10 requests every 10 seconds<br/>
+                    
+                    </td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          </div>
+        
+          <div class='api_section'>
+            <h3 class='api'>lol-status-v4</h3>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>
+                    Method
+                  </th>
+                  <th>Rate Limits</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr class='method'>
+                    <td class='path'>
+                      
+                      <span class='http_method'>GET</span>
+                      <a
+                        href='/apis#lol-status-v4/GET_getPlatformData'>
+                        /lol/status/v4/platform-data
+                      </a>
+                    </td>
+                    <td class='rate_limit_td'>
+                    
+                      20000 requests every 10 seconds<br/>
+                    
+                      1200000 requests every 10 minutes<br/>
+                    
+                    </td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          </div>
+        
+          <div class='api_section'>
+            <h3 class='api'>tft-status-v1</h3>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>
+                    Method
+                  </th>
+                  <th>Rate Limits</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr class='method'>
+                    <td class='path'>
+                      
+                      <span class='http_method'>GET</span>
+                      <a
+                        href='/apis#tft-status-v1/GET_getPlatformData'>
+                        /tft/status/v1/platform-data
+                      </a>
+                    </td>
+                    <td class='rate_limit_td'>
+                    
+                      20000 requests every 10 seconds<br/>
+                    
+                      1200000 requests every 10 minutes<br/>
+                    
+                    </td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          </div>
+        
+          <div class='api_section'>
+            <h3 class='api'>lor-status-v1</h3>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>
+                    Method
+                  </th>
+                  <th>Rate Limits</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr class='method'>
+                    <td class='path'>
+                      
+                      <span class='http_method'>GET</span>
+                      <a
+                        href='/apis#lor-status-v1/GET_getPlatformData'>
+                        /lor/status/v1/platform-data
+                      </a>
+                    </td>
+                    <td class='rate_limit_td'>
+                    
+                      20000 requests every 10 seconds<br/>
+                    
+                      1200000 requests every 10 minutes<br/>
+                    
+                    </td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          </div>
+        
+          <div class='api_section'>
+            <h3 class='api'>val-status-v1</h3>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>
+                    Method
+                  </th>
+                  <th>Rate Limits</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr class='method'>
+                    <td class='path'>
+                      
+                      <span class='http_method'>GET</span>
+                      <a
+                        href='/apis#val-status-v1/GET_getPlatformData'>
+                        /val/status/v1/platform-data
+                      </a>
+                    </td>
+                    <td class='rate_limit_td'>
+                    
+                      20000 requests every 10 seconds<br/>
+                    
+                      1200000 requests every 10 minutes<br/>
+                    
+                    </td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          </div>
+        
+          <div class='api_section'>
+            <h3 class='api'>match-v5</h3>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>
+                    Method
+                  </th>
+                  <th>Rate Limits</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr class='method'>
+                    <td class='path'>
+                      
+                      <span class='http_method'>GET</span>
+                      <a
+                        href='/apis#match-v5/GET_getMatch'>
+                        /lol/match/v5/matches/{matchId}
+                      </a>
+                    </td>
+                    <td class='rate_limit_td'>
+                    
+                      2000 requests every 10 seconds<br/>
+                    
+                    </td>
+                  </tr>
+                
+                  <tr class='method'>
+                    <td class='path'>
+                      
+                      <span class='http_method'>GET</span>
+                      <a
+                        href='/apis#match-v5/GET_getMatchIdsByPUUID'>
+                        /lol/match/v5/matches/by-puuid/{puuid}/ids
+                      </a>
+                    </td>
+                    <td class='rate_limit_td'>
+                    
+                      2000 requests every 10 seconds<br/>
+                    
+                    </td>
+                  </tr>
+                
+                  <tr class='method'>
+                    <td class='path'>
+                      
+                      <span class='http_method'>GET</span>
+                      <a
+                        href='/apis#match-v5/GET_getTimeline'>
+                        /lol/match/v5/matches/{matchId}/timeline
+                      </a>
+                    </td>
+                    <td class='rate_limit_td'>
+                    
+                      2000 requests every 10 seconds<br/>
+                    
+                    </td>
+                  </tr>
+                
+                  <tr class='method'>
+                    <td class='path'>
+                      
+                      <span class='http_method'>GET</span>
+                      <a
+                        href='/apis#match-v5/GET_getReplay'>
+                        /lol/match/v5/matches/by-puuid/{puuid}/replays
+                      </a>
+                    </td>
+                    <td class='rate_limit_td'>
+                    
+                      20000 requests every 10 seconds<br/>
+                    
+                      1200000 requests every 10 minutes<br/>
+                    
+                    </td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          </div>
+        
+          <div class='api_section'>
+            <h3 class='api'>lol-challenges-v1</h3>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>
+                    Method
+                  </th>
+                  <th>Rate Limits</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr class='method'>
+                    <td class='path'>
+                      
+                      <span class='http_method'>GET</span>
+                      <a
+                        href='/apis#lol-challenges-v1/GET_getAllChallengePercentiles'>
+                        /lol/challenges/v1/challenges/percentiles
+                      </a>
+                    </td>
+                    <td class='rate_limit_td'>
+                    
+                      20000 requests every 10 seconds<br/>
+                    
+                      1200000 requests every 10 minutes<br/>
+                    
+                    </td>
+                  </tr>
+                
+                  <tr class='method'>
+                    <td class='path'>
+                      
+                      <span class='http_method'>GET</span>
+                      <a
+                        href='/apis#lol-challenges-v1/GET_getChallengeLeaderboards'>
+                        /lol/challenges/v1/challenges/{challengeId}/leaderboards/by-level/{level}
+                      </a>
+                    </td>
+                    <td class='rate_limit_td'>
+                    
+                      20000 requests every 10 seconds<br/>
+                    
+                      1200000 requests every 10 minutes<br/>
+                    
+                    </td>
+                  </tr>
+                
+                  <tr class='method'>
+                    <td class='path'>
+                      
+                      <span class='http_method'>GET</span>
+                      <a
+                        href='/apis#lol-challenges-v1/GET_getChallengePercentiles'>
+                        /lol/challenges/v1/challenges/{challengeId}/percentiles
+                      </a>
+                    </td>
+                    <td class='rate_limit_td'>
+                    
+                      20000 requests every 10 seconds<br/>
+                    
+                      1200000 requests every 10 minutes<br/>
+                    
+                    </td>
+                  </tr>
+                
+                  <tr class='method'>
+                    <td class='path'>
+                      
+                      <span class='http_method'>GET</span>
+                      <a
+                        href='/apis#lol-challenges-v1/GET_getChallengeConfigs'>
+                        /lol/challenges/v1/challenges/{challengeId}/config
+                      </a>
+                    </td>
+                    <td class='rate_limit_td'>
+                    
+                      20000 requests every 10 seconds<br/>
+                    
+                      1200000 requests every 10 minutes<br/>
+                    
+                    </td>
+                  </tr>
+                
+                  <tr class='method'>
+                    <td class='path'>
+                      
+                      <span class='http_method'>GET</span>
+                      <a
+                        href='/apis#lol-challenges-v1/GET_getPlayerData'>
+                        /lol/challenges/v1/player-data/{puuid}
+                      </a>
+                    </td>
+                    <td class='rate_limit_td'>
+                    
+                      20000 requests every 10 seconds<br/>
+                    
+                      1200000 requests every 10 minutes<br/>
+                    
+                    </td>
+                  </tr>
+                
+                  <tr class='method'>
+                    <td class='path'>
+                      
+                      <span class='http_method'>GET</span>
+                      <a
+                        href='/apis#lol-challenges-v1/GET_getAllChallengeConfigs'>
+                        /lol/challenges/v1/challenges/config
+                      </a>
+                    </td>
+                    <td class='rate_limit_td'>
+                    
+                      20000 requests every 10 seconds<br/>
+                    
+                      1200000 requests every 10 minutes<br/>
+                    
+                    </td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          </div>
+        
+          <div class='api_section'>
+            <h3 class='api'>champion-mastery-v4</h3>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>
+                    Method
+                  </th>
+                  <th>Rate Limits</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr class='method'>
+                    <td class='path'>
+                      
+                      <span class='http_method'>GET</span>
+                      <a
+                        href='/apis#champion-mastery-v4/GET_getAllChampionMasteriesByPUUID'>
+                        /lol/champion-mastery/v4/champion-masteries/by-puuid/{encryptedPUUID}
+                      </a>
+                    </td>
+                    <td class='rate_limit_td'>
+                    
+                      20000 requests every 10 seconds<br/>
+                    
+                      1200000 requests every 10 minutes<br/>
+                    
+                    </td>
+                  </tr>
+                
+                  <tr class='method'>
+                    <td class='path'>
+                      
+                      <span class='http_method'>GET</span>
+                      <a
+                        href='/apis#champion-mastery-v4/GET_getChampionMasteryByPUUID'>
+                        /lol/champion-mastery/v4/champion-masteries/by-puuid/{encryptedPUUID}/by-champion/{championId}
+                      </a>
+                    </td>
+                    <td class='rate_limit_td'>
+                    
+                      20000 requests every 10 seconds<br/>
+                    
+                      1200000 requests every 10 minutes<br/>
+                    
+                    </td>
+                  </tr>
+                
+                  <tr class='method'>
+                    <td class='path'>
+                      
+                      <span class='http_method'>GET</span>
+                      <a
+                        href='/apis#champion-mastery-v4/GET_getChampionMasteryScoreByPUUID'>
+                        /lol/champion-mastery/v4/scores/by-puuid/{encryptedPUUID}
+                      </a>
+                    </td>
+                    <td class='rate_limit_td'>
+                    
+                      20000 requests every 10 seconds<br/>
+                    
+                      1200000 requests every 10 minutes<br/>
+                    
+                    </td>
+                  </tr>
+                
+                  <tr class='method'>
+                    <td class='path'>
+                      
+                      <span class='http_method'>GET</span>
+                      <a
+                        href='/apis#champion-mastery-v4/GET_getTopChampionMasteriesByPUUID'>
+                        /lol/champion-mastery/v4/champion-masteries/by-puuid/{encryptedPUUID}/top
+                      </a>
+                    </td>
+                    <td class='rate_limit_td'>
+                    
+                      20000 requests every 10 seconds<br/>
+                    
+                      1200000 requests every 10 minutes<br/>
+                    
+                    </td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          </div>
+        
+          <div class='api_section'>
+            <h3 class='api'>tournament-stub-v5</h3>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>
+                    Method
+                  </th>
+                  <th>Rate Limits</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr class='method'>
+                    <td class='path'>
+                      
+                      <span class='http_method'>POST</span>
+                      <a
+                        href='/apis#tournament-stub-v5/POST_createTournamentCode'>
+                        /lol/tournament-stub/v5/codes
+                      </a>
+                    </td>
+                    <td class='rate_limit_td'>
+                    
+                      20000 requests every 10 seconds<br/>
+                    
+                      1200000 requests every 10 minutes<br/>
+                    
+                    </td>
+                  </tr>
+                
+                  <tr class='method'>
+                    <td class='path'>
+                      
+                      <span class='http_method'>GET</span>
+                      <a
+                        href='/apis#tournament-stub-v5/GET_getLobbyEventsByCode'>
+                        /lol/tournament-stub/v5/lobby-events/by-code/{tournamentCode}
+                      </a>
+                    </td>
+                    <td class='rate_limit_td'>
+                    
+                      20000 requests every 10 seconds<br/>
+                    
+                      1200000 requests every 10 minutes<br/>
+                    
+                    </td>
+                  </tr>
+                
+                  <tr class='method'>
+                    <td class='path'>
+                      
+                      <span class='http_method'>GET</span>
+                      <a
+                        href='/apis#tournament-stub-v5/GET_getTournamentCode'>
+                        /lol/tournament-stub/v5/codes/{tournamentCode}
+                      </a>
+                    </td>
+                    <td class='rate_limit_td'>
+                    
+                      20000 requests every 10 seconds<br/>
+                    
+                      1200000 requests every 10 minutes<br/>
+                    
+                    </td>
+                  </tr>
+                
+                  <tr class='method'>
+                    <td class='path'>
+                      
+                      <span class='http_method'>POST</span>
+                      <a
+                        href='/apis#tournament-stub-v5/POST_registerProviderData'>
+                        /lol/tournament-stub/v5/providers
+                      </a>
+                    </td>
+                    <td class='rate_limit_td'>
+                    
+                      20000 requests every 10 seconds<br/>
+                    
+                      1200000 requests every 10 minutes<br/>
+                    
+                    </td>
+                  </tr>
+                
+                  <tr class='method'>
+                    <td class='path'>
+                      
+                      <span class='http_method'>POST</span>
+                      <a
+                        href='/apis#tournament-stub-v5/POST_registerTournament'>
+                        /lol/tournament-stub/v5/tournaments
+                      </a>
+                    </td>
+                    <td class='rate_limit_td'>
+                    
+                      20000 requests every 10 seconds<br/>
+                    
+                      1200000 requests every 10 minutes<br/>
+                    
+                    </td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          </div>
+        
+          <div class='api_section'>
+            <h3 class='api'>spectator-v5</h3>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>
+                    Method
+                  </th>
+                  <th>Rate Limits</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr class='method'>
+                    <td class='path'>
+                      
+                      <span class='http_method'>GET</span>
+                      <a
+                        href='/apis#spectator-v5/GET_getCurrentGameInfoByPuuid'>
+                        /lol/spectator/v5/active-games/by-summoner/{encryptedPUUID}
+                      </a>
+                    </td>
+                    <td class='rate_limit_td'>
+                    
+                      20000 requests every 10 seconds<br/>
+                    
+                      1200000 requests every 10 minutes<br/>
+                    
+                    </td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+    </div>
+  </div>
+
+
+
+  <footer class="site-footer">
+    <p class="footer-note">© 2021 Riot Games, Inc. All rights reserved. League of Legends and Riot Games are trademarks, service marks, and registered trademarks of Riot Games, Inc.</p>
+    <ul class="footer-nav">
+      <li><a href="/terms">API Terms</a></li>
+      <li><a href="/getting-started.html">Getting Started</a></li>
+      <li><a href="https://www.riotgames.com/en/privacy-notice">Privacy Notice</a></li>
+    </ul>
+  </footer>
+
+
+
+  <script src="/static/js/remark/vendor/bootstrap/bootstrap.min.0657062984d9.js"></script>
+  <script src="/static/js/clipboard.3e5e0fa949e0.js"></script>
+  <script src="/static/js/main.3d3dfe549b0d.js"></script>
+  <script src="/static/js/csrf.7ce191938cc3.js"></script>
+  <script src="/static/js/scripts.ebece89cb94f.js"></script>
+</body>
+</html>

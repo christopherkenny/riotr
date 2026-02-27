@@ -1,0 +1,29 @@
+http_interactions:
+- request:
+    method: GET
+    uri: https://na1.api.riotgames.com/lol/challenges/v1/player-data/O2q8aNv6VBlFz9ABjEoOH8g1d_KO1IQHboIuog8ORd7QOH2L8nGgsYgK-TN16ucwUQsPpihH-tLtAA
+  response:
+    status: 200
+    headers:
+      date: Fri, 27 Feb 2026 03:52:31 GMT
+      content-type: application/json
+      access-control-allow-headers: User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range
+      access-control-allow-methods: GET, PUT, DELETE, POST, OPTIONS
+      access-control-allow-origin: '*'
+      access-control-expose-headers: Content-Length,Content-Range
+      set-cookie: __cf_bm=2txuB1ZQ9O2CqZwuCLi9BXxbamRKBlC9P5JUY91GkoI-1772164351.865787-1.0.1.1-wp9CeieaTyVY5ZTWAyxp4ZvWATZISnrheEWDpkGk_6HVrVKuhwmtBBZ2.Bm5L4YlGqp8slX6tbroiPHoNrrHyQ5.hJ.9kmdk5GkRD03ujAc_6wkK1LbWhur5glHiAdOz;
+        HttpOnly; Secure; Path=/; Domain=api.riotgames.com; Expires=Fri, 27 Feb 2026
+        04:22:31 GMT
+      content-encoding: gzip
+      vary: Accept-Encoding
+      x-app-rate-limit: 100:120,20:1
+      x-app-rate-limit-count: 5:120,1:1
+      x-method-rate-limit: 20000:10,1200000:600
+      x-method-rate-limit-count: 1:10,1:600
+      cf-cache-status: DYNAMIC
+      server: cloudflare
+      cf-ray: 9d44badf2fcbc674-EWR
+    body:
+      string: '{"totalPoints":{"level":"NONE","current":0,"max":29680},"categoryPoints":{"VETERANCY":{"level":"NONE","current":0,"max":6300},"EXPERTISE":{"level":"NONE","current":0,"max":6715},"COLLECTION":{"level":"NONE","current":0,"max":4200},"TEAMWORK":{"level":"NONE","current":0,"max":7735},"IMAGINATION":{"level":"NONE","current":0,"max":4730}},"challenges":[],"preferences":{}}'
+  recorded_at: 2026-02-27 03:52:32
+recorded_with: VCR-vcr/2.1.0

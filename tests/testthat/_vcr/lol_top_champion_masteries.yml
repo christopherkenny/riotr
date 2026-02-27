@@ -1,0 +1,29 @@
+http_interactions:
+- request:
+    method: GET
+    uri: https://na1.api.riotgames.com/lol/champion-mastery/v4/champion-masteries/by-puuid/O2q8aNv6VBlFz9ABjEoOH8g1d_KO1IQHboIuog8ORd7QOH2L8nGgsYgK-TN16ucwUQsPpihH-tLtAA/top
+  response:
+    status: 200
+    headers:
+      date: Fri, 27 Feb 2026 03:52:53 GMT
+      content-type: application/json
+      access-control-allow-headers: User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range
+      access-control-allow-methods: GET, PUT, DELETE, POST, OPTIONS
+      access-control-allow-origin: '*'
+      access-control-expose-headers: Content-Length,Content-Range
+      set-cookie: __cf_bm=JDhleylLr7rRPAeNiAtCVvhAn1fAA5iRQxuZxaEilrU-1772164373.8832202-1.0.1.1-0Or69NO2Ld6gYXZ9jE3QB8Xj5.SIgW88ilmMfr8KPgtqr1Gx9Hp.VolgAqOtc4yZ3sbzcu3el1QZ1IurDDrxAj4IMIoJzWF9kHEQa4Na.D5l.VkFd7szeyPZONKyj6pn;
+        HttpOnly; Secure; Path=/; Domain=api.riotgames.com; Expires=Fri, 27 Feb 2026
+        04:22:53 GMT
+      content-encoding: gzip
+      vary: Accept-Encoding
+      x-app-rate-limit: 100:120,20:1
+      x-app-rate-limit-count: 8:120,1:1
+      x-method-rate-limit: 20000:10,1200000:600
+      x-method-rate-limit-count: 1:10,1:600
+      cf-cache-status: DYNAMIC
+      server: cloudflare
+      cf-ray: 9d44bb68cab925dc-EWR
+    body:
+      string: '[{"puuid":"O2q8aNv6VBlFz9ABjEoOH8g1d_KO1IQHboIuog8ORd7QOH2L8nGgsYgK-TN16ucwUQsPpihH-tLtAA","championId":67,"championLevel":15,"championPoints":181371,"lastPlayTime":1526182459000,"championPointsSinceLastLevel":50771,"championPointsUntilNextLevel":-39771,"markRequiredForNextLevel":2,"tokensEarned":0,"championSeasonMilestone":0,"nextSeasonMilestone":{"requireGradeCounts":{"A-":1},"rewardMarks":1,"bonus":false,"totalGamesRequires":1}},{"puuid":"O2q8aNv6VBlFz9ABjEoOH8g1d_KO1IQHboIuog8ORd7QOH2L8nGgsYgK-TN16ucwUQsPpihH-tLtAA","championId":119,"championLevel":9,"championPoints":85598,"lastPlayTime":1526244290000,"championPointsSinceLastLevel":20998,"championPointsUntilNextLevel":-9998,"markRequiredForNextLevel":2,"tokensEarned":1,"championSeasonMilestone":0,"nextSeasonMilestone":{"requireGradeCounts":{"A-":1},"rewardMarks":1,"bonus":false,"totalGamesRequires":1}},{"puuid":"O2q8aNv6VBlFz9ABjEoOH8g1d_KO1IQHboIuog8ORd7QOH2L8nGgsYgK-TN16ucwUQsPpihH-tLtAA","championId":236,"championLevel":7,"championPoints":60244,"lastPlayTime":1496900315000,"championPointsSinceLastLevel":17644,"championPointsUntilNextLevel":-6644,"markRequiredForNextLevel":1,"tokensEarned":0,"championSeasonMilestone":0,"nextSeasonMilestone":{"requireGradeCounts":{"A-":1},"rewardMarks":1,"bonus":false,"totalGamesRequires":1}}]'
+  recorded_at: 2026-02-27 03:52:54
+recorded_with: VCR-vcr/2.1.0

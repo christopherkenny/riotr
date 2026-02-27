@@ -1,0 +1,29 @@
+http_interactions:
+- request:
+    method: GET
+    uri: https://americas.api.riotgames.com/riot/account/v1/accounts/by-puuid/O2q8aNv6VBlFz9ABjEoOH8g1d_KO1IQHboIuog8ORd7QOH2L8nGgsYgK-TN16ucwUQsPpihH-tLtAA
+  response:
+    status: 200
+    headers:
+      date: Fri, 27 Feb 2026 04:03:10 GMT
+      content-type: application/json
+      access-control-allow-headers: User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range
+      access-control-allow-methods: GET, PUT, DELETE, POST, OPTIONS
+      access-control-allow-origin: '*'
+      access-control-expose-headers: Content-Length,Content-Range
+      set-cookie: __cf_bm=AvVifkaDbCGFlj01XDyUSHbtSQUtfyqjHsb0TcBmUH0-1772164990.0851808-1.0.1.1-DzGfW8ZgwWyH5ayvmea6Jozs_OqacfpJ3cryUp18MO5VnTptroldYv_M3GgnmF6BbUDBEO8cUCbf55zPpRFGg6OWxqYDCv37VBF6sR.uAzwvnx4g9FoHM1Dg9GD1OA0D;
+        HttpOnly; Secure; Path=/; Domain=api.riotgames.com; Expires=Fri, 27 Feb 2026
+        04:33:10 GMT
+      content-encoding: gzip
+      vary: Accept-Encoding
+      x-app-rate-limit: 100:120,20:1
+      x-app-rate-limit-count: 3:120,1:1
+      x-method-rate-limit: 1000:60
+      x-method-rate-limit-count: 1:60
+      cf-cache-status: DYNAMIC
+      server: cloudflare
+      cf-ray: 9d44ca740c904313-EWR
+    body:
+      string: '{"puuid":"O2q8aNv6VBlFz9ABjEoOH8g1d_KO1IQHboIuog8ORd7QOH2L8nGgsYgK-TN16ucwUQsPpihH-tLtAA","gameName":"Dôûblêlift","tagLine":"NA1"}'
+  recorded_at: 2026-02-27 04:03:10
+recorded_with: VCR-vcr/2.1.0

@@ -1,0 +1,29 @@
+http_interactions:
+- request:
+    method: GET
+    uri: https://na1.api.riotgames.com/tft/league/v1/by-puuid/GmNPNjUbzbWN8YIA79V4p308eFpf21xPO2Lw8o2xJTJMPW83W54t4GfyfpwOn7-hBz5c3MHpg-Dc3w
+  response:
+    status: 200
+    headers:
+      date: Fri, 27 Feb 2026 03:55:21 GMT
+      content-type: application/json
+      access-control-allow-headers: User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range
+      access-control-allow-methods: GET, PUT, DELETE, POST, OPTIONS
+      access-control-allow-origin: '*'
+      access-control-expose-headers: Content-Length,Content-Range
+      set-cookie: __cf_bm=60.6rtagt9GAm8K9YOJFnlIjgAkxdsZu62b5dSsSTR0-1772164521.3945396-1.0.1.1-ao4h_2I5XYR9acakChjCX2vh3E1a.IYv7BHNjE..mt4IzYxbXeO8f69bptaX0Hd7JFxWLJ1P7JHmJkIq3yd2uSDSzVtY4p._dPNcUm35.BHgt3E08XENOEMXxoZUz.Ni;
+        HttpOnly; Secure; Path=/; Domain=api.riotgames.com; Expires=Fri, 27 Feb 2026
+        04:25:21 GMT
+      content-encoding: gzip
+      vary: Accept-Encoding
+      x-app-rate-limit: 100:120,20:1
+      x-app-rate-limit-count: 5:120,1:1
+      x-method-rate-limit: 20000:10,1200000:600
+      x-method-rate-limit-count: 1:10,1:600
+      cf-cache-status: DYNAMIC
+      server: cloudflare
+      cf-ray: 9d44bf02ba293e9d-EWR
+    body:
+      string: '[{"puuid":"GmNPNjUbzbWN8YIA79V4p308eFpf21xPO2Lw8o2xJTJMPW83W54t4GfyfpwOn7-hBz5c3MHpg-Dc3w","leagueId":"cf80b674-dacc-365f-aeef-050187b3cc19","queueType":"RANKED_TFT","tier":"CHALLENGER","rank":"I","leaguePoints":1728,"wins":606,"losses":271,"veteran":true,"inactive":false,"freshBlood":false,"hotStreak":false}]'
+  recorded_at: 2026-02-27 03:55:21
+recorded_with: VCR-vcr/2.1.0

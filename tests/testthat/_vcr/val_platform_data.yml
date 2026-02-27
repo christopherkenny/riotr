@@ -1,0 +1,46 @@
+http_interactions:
+- request:
+    method: GET
+    uri: https://na.api.riotgames.com/val/status/v1/platform-data
+  response:
+    status: 200
+    headers:
+      accept-ranges: bytes
+      access-control-allow-headers: User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range
+      access-control-allow-methods: GET, PUT, DELETE, POST, OPTIONS
+      access-control-allow-origin: '*'
+      access-control-expose-headers: Content-Length,Content-Range
+      akamai-request-bc: '[a=23.61.249.204,b=589573411,c=g,n=US_FL_MIAMI,o=20940]'
+      cache-control: max-age=10
+      cf-cache-status: DYNAMIC
+      cf-ray: 9d44bda46d33ea5b-EWR
+      content-encoding: gzip
+      content-type: application/json
+      date: Fri, 27 Feb 2026 03:54:25 GMT
+      etag: '"13b582a6ff7d3d0a7e6b8c7ec0ead973"'
+      last-modified: Thu, 26 Feb 2026 23:35:12 GMT
+      server: cloudflare
+      set-cookie: __cf_bm=9KOIEszqK0nUDdYEBUzPPYEfyKwoFsFbulJLwk1zz.Y-1772164465.3413372-1.0.1.1-doqtdyTua8qPkeL04F0nirmZstfKfUxm5yyLyR2oIm09ec56lraYCZNhwdA5LuWtjgDkvAMg4IEMhy6ktbdFuJZhmkgHJx0j8oMdo9sZ89orpCuL4YlsqBtW_rENVEry;
+        HttpOnly; Secure; Path=/; Domain=api.riotgames.com; Expires=Fri, 27 Feb 2026
+        04:24:25 GMT
+      vary:
+      - Origin
+      - accept-encoding
+      x-amz-id-2: u7Vv0gkxi5WDhytbaTjn9wNyHTElXYjgBLvRDjhNGW0q+fRpvyZdziT81+6lyxsU5YBSh+MqbHA=
+      x-amz-meta-b2sum: 6e6c52f6350cd66c5f5be637e84b0c43
+      x-amz-replication-status: PENDING
+      x-amz-request-id: F5X7DSZKDVXX36DW
+      x-amz-server-side-encryption: AES256
+      x-amz-version-id: BOTJntRTsRqknBtowPCvjyzP2qelL252
+      x-app-rate-limit: 100:120,20:1
+      x-app-rate-limit-count: 1:120,1:1
+      x-method-rate-limit: 20000:10,1200000:600
+      x-method-rate-limit-count: 1:10,1:600
+      x-riot-cdn: Akamai
+    body:
+      string: '{"id": "NA", "name": "North America", "locales": ["ar_AE", "de_DE",
+        "en_SG", "en_US", "es_ES", "es_MX", "fr_FR", "id_ID", "it_IT", "ja_JP", "ko_KR",
+        "pl_PL", "pt_BR", "ru_RU", "th_TH", "tr_TR", "vi_VN", "zh_TW"], "maintenances":
+        [], "incidents": []}'
+  recorded_at: 2026-02-27 03:54:26
+recorded_with: VCR-vcr/2.1.0

@@ -1,0 +1,53 @@
+http_interactions:
+- request:
+    method: GET
+    uri: https://na1.api.riotgames.com/lol/challenges/v1/challenges/1/config
+  response:
+    status: 200
+    headers:
+      date: Fri, 27 Feb 2026 03:52:28 GMT
+      content-type: application/json
+      access-control-allow-headers: User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range
+      access-control-allow-methods: GET, PUT, DELETE, POST, OPTIONS
+      access-control-allow-origin: '*'
+      access-control-expose-headers: Content-Length,Content-Range
+      set-cookie: __cf_bm=KVdma1XgGHxCz.xS4ABVMLRPhIdhRMxA0jG0jtg97bg-1772164348.0095742-1.0.1.1-DMgXI9lXBQBGOdwYs.g8jHSk9xmueFdL6le97bVC4G5eRWJX3IXKIYcLnS_4A1jNhcObUPHGD2OIVPQ5zmrdxUh83lDU4cn1GYL6rIABJIh9ZsEDIkWUQc4bA4hUIkHA;
+        HttpOnly; Secure; Path=/; Domain=api.riotgames.com; Expires=Fri, 27 Feb 2026
+        04:22:28 GMT
+      content-encoding: gzip
+      vary: Accept-Encoding
+      x-app-rate-limit: 100:120,20:1
+      x-app-rate-limit-count: 2:120,1:1
+      x-method-rate-limit: 20000:10,1200000:600
+      x-method-rate-limit-count: 1:10,1:600
+      cf-cache-status: DYNAMIC
+      server: cloudflare
+      cf-ray: 9d44bac70ed4c674-EWR
+    body:
+      string: '{"id":1,"localizedNames":{"ar_AE":{"description":"","name":"الخيال","shortDescription":"نقطة
+        ذروة الخيال"},"cs_CZ":{"description":"","name":"PŘEDSTAVIVOST","shortDescription":"Vrchol
+        PŘEDSTAVIVOSTI"},"de_DE":{"description":"","name":"FANTASIE","shortDescription":"Erfolge:
+        FANTASIE"},"el_GR":{"description":"","name":"ΦΑΝΤΑΣΙΑ","shortDescription":"Επιστέγασμα
+        ΦΑΝΤΑΣΙΑΣ"},"en_AU":{"description":"","name":"IMAGINATION","shortDescription":"IMAGINATION
+        capstone"},"en_GB":{"description":"","name":"IMAGINATION","shortDescription":"IMAGINATION
+        capstone"},"en_PH":{"description":"","name":"IMAGINATION","shortDescription":"IMAGINATION
+        capstone"},"en_SG":{"description":"","name":"IMAGINATION","shortDescription":"IMAGINATION
+        capstone"},"en_US":{"description":"","name":"IMAGINATION","shortDescription":"IMAGINATION
+        capstone"},"es_AR":{"description":"","name":"IMAGINACIÓN","shortDescription":"Cúspide
+        de la IMAGINACIÓN"},"es_ES":{"description":"","name":"IMAGINACIÓN","shortDescription":"Pilar
+        de la IMAGINACIÓN"},"es_MX":{"description":"","name":"IMAGINACIÓN","shortDescription":"Cúspide
+        de la IMAGINACIÓN"},"fr_FR":{"description":"","name":"IMAGINATION","shortDescription":"Point
+        culminant d''IMAGINATION."},"hu_HU":{"description":"","name":"KÉPZELŐERŐ","shortDescription":"KÉPZELŐERŐ
+        csúcseredmény"},"id_ID":{"description":"","name":"IMAGINATION","shortDescription":"Capstone
+        IMAGINATION"},"it_IT":{"description":"","name":"IMMAGINAZIONE","shortDescription":"Configurazione
+        IMMAGINAZIONE"},"ja_JP":{"description":"","name":"創造","shortDescription":"「創造」キャップストーン"},"ko_KR":{"description":"","name":"창의성","shortDescription":"창의성
+        캡스톤"},"pl_PL":{"description":"","name":"WYOBRAŹNIA","shortDescription":"Zwieńczenie
+        — WYOBRAŹNIA"},"pt_BR":{"description":"","name":"IMAGINAÇÃO","shortDescription":"Divisão
+        IMAGINAÇÃO"},"ro_RO":{"description":"","name":"IMAGINAȚIE","shortDescription":"Categoria
+        IMAGINAȚIE"},"ru_RU":{"description":"","name":"ВООБРАЖЕНИЕ","shortDescription":"Основная
+        категория ''''ВООБРАЖЕНИЕ''''"},"th_TH":{"description":"","name":"จินตนาการ","shortDescription":"Capstone
+        ความคิดสร้างสรรค์"},"tr_TR":{"description":"","name":"HAYAL GÜCÜ","shortDescription":"HAYAL
+        GÜCÜ mihenk taşı"},"vi_VN":{"description":"","name":"SÁNG TẠO","shortDescription":"Mốc
+        SÁNG TẠO"},"zh_CN":{"description":"","name":"奇思妙想","shortDescription":"【奇思妙想】核心成就"},"zh_MY":{"description":"","name":"想象力","shortDescription":"「想像力」峰顶石"},"zh_TW":{"description":"","name":"想像力","shortDescription":"「想像力」峰頂石"}},"state":"ENABLED","leaderboard":false,"thresholds":{"PLATINUM":1200.0,"MASTER":3500.0,"BRONZE":175.0,"GOLD":700.0,"IRON":75.0,"DIAMOND":2000.0,"SILVER":300.0}}'
+  recorded_at: 2026-02-27 03:52:28
+recorded_with: VCR-vcr/2.1.0

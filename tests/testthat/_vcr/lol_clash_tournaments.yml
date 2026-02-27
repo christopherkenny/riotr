@@ -1,0 +1,29 @@
+http_interactions:
+- request:
+    method: GET
+    uri: https://na1.api.riotgames.com/lol/clash/v1/tournaments
+  response:
+    status: 200
+    headers:
+      date: Fri, 27 Feb 2026 03:52:55 GMT
+      content-type: application/json
+      access-control-allow-headers: User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range
+      access-control-allow-methods: GET, PUT, DELETE, POST, OPTIONS
+      access-control-allow-origin: '*'
+      access-control-expose-headers: Content-Length,Content-Range
+      set-cookie: __cf_bm=B7os01v0A9pvQARS7PU_WOGeyOtweHfDJTJ7iktM0fk-1772164375.423062-1.0.1.1-d0G8gejnsosD4wy7m4FJhyRYBlW6tAUOLJziijDa8MRpNN9Xd9LRWqohKoItR5bDMiq2zsw7gvxz2nEf8pU7PF3BsjkXSkMM5MSLczAnqbu1W7J6GSOC_5D7FwAPrOqB;
+        HttpOnly; Secure; Path=/; Domain=api.riotgames.com; Expires=Fri, 27 Feb 2026
+        04:22:55 GMT
+      content-encoding: gzip
+      vary: Accept-Encoding
+      x-app-rate-limit: 100:120,20:1
+      x-app-rate-limit-count: 10:120,1:1
+      x-method-rate-limit: 10:60
+      x-method-rate-limit-count: 1:60
+      cf-cache-status: DYNAMIC
+      server: cloudflare
+      cf-ray: 9d44bb72689925dc-EWR
+    body:
+      string: '[{"id":136742,"themeId":10,"nameKey":"noxus","nameKeySecondary":"day_2","schedule":[{"id":129782,"registrationTime":1774221300000,"startTime":1774231200000,"cancelled":false}]},{"id":136741,"themeId":10,"nameKey":"noxus","nameKeySecondary":"day_1","schedule":[{"id":129781,"registrationTime":1774134900000,"startTime":1774144800000,"cancelled":false}]}]'
+  recorded_at: 2026-02-27 03:52:55
+recorded_with: VCR-vcr/2.1.0

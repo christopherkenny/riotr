@@ -1,0 +1,41 @@
+http_interactions:
+- request:
+    method: GET
+    uri: https://na1.api.riotgames.com/lol/status/v4/platform-data
+  response:
+    status: 200
+    headers:
+      date: Fri, 27 Feb 2026 01:46:14 GMT
+      content-type: application/json
+      accept-ranges: bytes
+      access-control-allow-headers: User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range
+      access-control-allow-methods: GET, PUT, DELETE, POST, OPTIONS
+      access-control-allow-origin: '*'
+      access-control-expose-headers: Content-Length,Content-Range
+      age: '12'
+      cache-control: max-age=60
+      cf-cache-status: DYNAMIC
+      set-cookie: __cf_bm=fGT3hyNfvSacQ2LiwsmfjXFhPP0FM5RYaD2x1SZkT_U-1772156774.3141403-1.0.1.1-Jsre_eo0bHEEghDvrid9W.jWWYTVkmtgNy3U83pRNG71OJ0XTAY431ait58_fd_l8HsriMqiPLkRbZUD5mzgP4RWc4eahy_46wao9qfGUFVp1LfWqh5CC0EiTbLpEZUQ;
+        HttpOnly; Secure; Path=/; Domain=api.riotgames.com; Expires=Fri, 27 Feb 2026
+        02:16:14 GMT
+      content-encoding: gzip
+      etag: '"d5f248f8ef8a47145e21b8c438b2d995"'
+      last-modified: Sat, 21 Feb 2026 12:00:20 GMT
+      server: cloudflare
+      vary: Accept-Encoding
+      x-amz-id-2: rZhI6HaqJBSN7PoI4ZY6ioE5glKg989jT3RnZFJQHAEbcGPybumloSij4YsbMOdl+FYOJ0mcCKcKCdeXmWiNrj77xbt5hx9k
+      x-amz-meta-b2sum: fbdb5b1f5873640a79014e3e50a90e48
+      x-amz-replication-status: COMPLETED
+      x-amz-request-id: EDPXXZ8JAMWR5FFQ
+      x-amz-server-side-encryption: AES256
+      x-amz-version-id: UUviA7wohFkKTlM7GtQW6cLSo.nOgw6j
+      x-app-rate-limit: 100:120,20:1
+      x-app-rate-limit-count: 8:120,2:1
+      x-method-rate-limit: 20000:10,1200000:600
+      x-method-rate-limit-count: 1:10,2:600
+      x-riot-cdn: Cloudflare
+      cf-ray: 9d4401df7bd493b6-EWR
+    body:
+      string: '{"id":"NA1","name":"North America","locales":["ar_AE","cs_CZ","de_DE","el_GR","en_AU","en_GB","en_PH","en_SG","en_US","es_AR","es_ES","es_MX","fr_FR","hu_HU","id_ID","it_IT","ja_JP","ko_KR","pl_PL","pt_BR","ro_RO","ru_RU","th_TH","tr_TR","vi_VN","zh_MY","zh_TW"],"maintenances":[],"incidents":[]}'
+  recorded_at: 2026-02-27 01:46:14
+recorded_with: VCR-vcr/2.1.0

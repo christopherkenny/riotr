@@ -1,0 +1,29 @@
+http_interactions:
+- request:
+    method: GET
+    uri: https://na1.api.riotgames.com/lol/platform/v3/champion-rotations
+  response:
+    status: 200
+    headers:
+      date: Fri, 27 Feb 2026 01:46:11 GMT
+      content-type: application/json
+      access-control-allow-headers: User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range
+      access-control-allow-methods: GET, PUT, DELETE, POST, OPTIONS
+      access-control-allow-origin: '*'
+      access-control-expose-headers: Content-Length,Content-Range
+      set-cookie: __cf_bm=slPsUhypZ2gIHR_3W2az5kOG5hdqbCGljR1vkCbCzoE-1772156771.1382177-1.0.1.1-X41.yEPHvfIO2Vnhw_ChXkeKrK6SLdN8qzrkvr3XhB1B8O9JK_r2EV69PBvFTFTj_h440Ym4NYrA0heBINB1DnGyl0APUELZeVDPEcSJxUFBf2sXS0hpX2gVnFozATO.;
+        HttpOnly; Secure; Path=/; Domain=api.riotgames.com; Expires=Fri, 27 Feb 2026
+        02:16:11 GMT
+      content-encoding: gzip
+      vary: Accept-Encoding
+      x-app-rate-limit: 100:120,20:1
+      x-app-rate-limit-count: 2:120,1:1
+      x-method-rate-limit: 500:600,30:10
+      x-method-rate-limit-count: 4:600,1:10
+      cf-cache-status: DYNAMIC
+      server: cloudflare
+      cf-ray: 9d4401cb9c9e93b6-EWR
+    body:
+      string: '{"freeChampionIds":[12,41,50,55,74,82,102,107,111,115,127,161,163,200,360,498,516,518,523,799],"freeChampionIdsForNewPlayers":[17,18,33,37,51,54,80,82,89,91,112,113,115,131,134,145,222,254,350,875],"maxNewPlayerLevel":10}'
+  recorded_at: 2026-02-27 01:46:11
+recorded_with: VCR-vcr/2.1.0

@@ -1,0 +1,29 @@
+http_interactions:
+- request:
+    method: GET
+    uri: https://na1.api.riotgames.com/lol/clash/v1/players/by-puuid/O2q8aNv6VBlFz9ABjEoOH8g1d_KO1IQHboIuog8ORd7QOH2L8nGgsYgK-TN16ucwUQsPpihH-tLtAA
+  response:
+    status: 200
+    headers:
+      date: Fri, 27 Feb 2026 03:52:54 GMT
+      content-type: application/json
+      access-control-allow-headers: User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range
+      access-control-allow-methods: GET, PUT, DELETE, POST, OPTIONS
+      access-control-allow-origin: '*'
+      access-control-expose-headers: Content-Length,Content-Range
+      set-cookie: __cf_bm=kf8Fp7fz02.uUUGa_s2JEXUt2ZdTcMXxym03BGakX8w-1772164374.1430511-1.0.1.1-fCIMixAJu29KaCCEQOGauUsKHEqW2t72VZ6lV6cbcEL43th5I0hGEp539zQg5p2JCtgq6a82iAv7cQkWMKtIVA53K4kPTkQ4P.TsmFgIlE36_L3Er8UB3L4FQlvitXuO;
+        HttpOnly; Secure; Path=/; Domain=api.riotgames.com; Expires=Fri, 27 Feb 2026
+        04:22:54 GMT
+      content-encoding: gzip
+      vary: Accept-Encoding
+      x-app-rate-limit: 100:120,20:1
+      x-app-rate-limit-count: 9:120,2:1
+      x-method-rate-limit: 20000:10,1200000:600
+      x-method-rate-limit-count: 1:10,1:600
+      cf-cache-status: DYNAMIC
+      server: cloudflare
+      cf-ray: 9d44bb6a6d2b25dc-EWR
+    body:
+      string: '[]'
+  recorded_at: 2026-02-27 03:52:54
+recorded_with: VCR-vcr/2.1.0

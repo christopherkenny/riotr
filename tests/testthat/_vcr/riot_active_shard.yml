@@ -1,0 +1,31 @@
+http_interactions:
+- request:
+    method: GET
+    uri: https://americas.api.riotgames.com/riot/account/v1/active-shards/by-game/val/by-puuid/O2q8aNv6VBlFz9ABjEoOH8g1d_KO1IQHboIuog8ORd7QOH2L8nGgsYgK-TN16ucwUQsPpihH-tLtAA
+  response:
+    status: 200
+    headers:
+      access-control-allow-headers: User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range
+      access-control-allow-methods: GET, PUT, DELETE, POST, OPTIONS
+      access-control-allow-origin: '*'
+      access-control-expose-headers: Content-Length,Content-Range
+      cf-cache-status: DYNAMIC
+      cf-ray: 9d44bd26dbb4c44f-EWR
+      content-encoding: gzip
+      content-type: application/json
+      date: Fri, 27 Feb 2026 03:54:05 GMT
+      server: cloudflare
+      set-cookie: __cf_bm=3xmxbczB6gp36L1cUVzNujgtIm8Qo7TR5k.JsRGQaHw-1772164445.2609627-1.0.1.1-VgRK_iYmS7gzcJc94GekTxwNvcZTE7AQjOeMFoAifFcTxJU2y2QOZqAMb0wA928_w0vOu_tQSqpOhSTXekcYFruUPhO_D7vdNp8h7AGbVVAM9hvABVOLeRfPnr5vduK_;
+        HttpOnly; Secure; Path=/; Domain=api.riotgames.com; Expires=Fri, 27 Feb 2026
+        04:24:05 GMT
+      vary:
+      - Origin
+      - accept-encoding
+      x-app-rate-limit: 100:120,20:1
+      x-app-rate-limit-count: 3:120,2:1
+      x-method-rate-limit: 20000:10,1200000:600
+      x-method-rate-limit-count: 1:10,1:600
+    body:
+      string: '{"puuid":"O2q8aNv6VBlFz9ABjEoOH8g1d_KO1IQHboIuog8ORd7QOH2L8nGgsYgK-TN16ucwUQsPpihH-tLtAA","game":"val","activeShard":"na"}'
+  recorded_at: 2026-02-27 03:54:05
+recorded_with: VCR-vcr/2.1.0

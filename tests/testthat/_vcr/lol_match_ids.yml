@@ -1,0 +1,37 @@
+http_interactions:
+- request:
+    method: GET
+    uri: https://americas.api.riotgames.com/lol/match/v5/matches/by-puuid/O2q8aNv6VBlFz9ABjEoOH8g1d_KO1IQHboIuog8ORd7QOH2L8nGgsYgK-TN16ucwUQsPpihH-tLtAA/ids?count=5
+  response:
+    status: 200
+    headers:
+      access-control-allow-headers: User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range
+      access-control-allow-methods: GET, PUT, DELETE, POST, OPTIONS
+      access-control-allow-origin: '*'
+      access-control-expose-headers: Content-Length,Content-Range
+      cache-control: no-cache, no-store, max-age=0, must-revalidate
+      cf-cache-status: DYNAMIC
+      cf-ray: 9d44c9a27e4bfccc-EWR
+      content-encoding: gzip
+      content-type: application/json
+      date: Fri, 27 Feb 2026 04:02:36 GMT
+      expires: '0'
+      pragma: no-cache
+      server: cloudflare
+      set-cookie: __cf_bm=R0QqDNSdbOVT130qe.5mMEO4yph6_ZfFVQjoTFFcMSc-1772164956.5544622-1.0.1.1-0sJHeY.TtMsLppL_2rtWGEfpKvRGighXx8AjL7bnW1ElkyluPZbkTEp1ebBqlNMI8P8xXV56cA.uxpbz4natgzFZohNx1_PerogXNFZho..pKD8t5KdYQfTOQ8b7OzAT;
+        HttpOnly; Secure; Path=/; Domain=api.riotgames.com; Expires=Fri, 27 Feb 2026
+        04:32:36 GMT
+      vary:
+      - Access-Control-Request-Headers
+      - accept-encoding
+      x-app-rate-limit: 100:120,20:1
+      x-app-rate-limit-count: 2:120,1:1
+      x-content-type-options: nosniff
+      x-frame-options: DENY
+      x-method-rate-limit: '2000:10'
+      x-method-rate-limit-count: '1:10'
+      x-xss-protection: '0'
+    body:
+      string: '[]'
+  recorded_at: 2026-02-27 04:02:36
+recorded_with: VCR-vcr/2.1.0

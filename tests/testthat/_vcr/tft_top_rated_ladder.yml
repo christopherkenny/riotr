@@ -1,0 +1,29 @@
+http_interactions:
+- request:
+    method: GET
+    uri: https://na1.api.riotgames.com/tft/league/v1/rated-ladders/RANKED_TFT_TURBO/top
+  response:
+    status: 200
+    headers:
+      date: Fri, 27 Feb 2026 03:55:22 GMT
+      content-type: application/json
+      access-control-allow-headers: User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range
+      access-control-allow-methods: GET, PUT, DELETE, POST, OPTIONS
+      access-control-allow-origin: '*'
+      access-control-expose-headers: Content-Length,Content-Range
+      set-cookie: __cf_bm=gSipho6r4Mx3gpOUaNPcL4TRkMBnqBy_A7tKLGB_7C0-1772164522.7266924-1.0.1.1-rg3ibumPTBXWGov36zStbaXhWBXCvfT3gNHLcpV1B1AcL9xw6lPZY15..t48AY5L76T3FwLX2zqmn08PUuiVBB7vF9WcWLwGBg_mkIPYufqQRRw0Jn07Xgx6N9a6a.c0;
+        HttpOnly; Secure; Path=/; Domain=api.riotgames.com; Expires=Fri, 27 Feb 2026
+        04:25:22 GMT
+      content-encoding: gzip
+      vary: Accept-Encoding
+      x-app-rate-limit: 100:120,20:1
+      x-app-rate-limit-count: 6:120,1:1
+      x-method-rate-limit: 20000:10,1200000:600
+      x-method-rate-limit-count: 1:10,1:600
+      cf-cache-status: DYNAMIC
+      server: cloudflare
+      cf-ray: 9d44bf0b0d4e3e9d-EWR
+    body:
+      string: '[]'
+  recorded_at: 2026-02-27 03:55:23
+recorded_with: VCR-vcr/2.1.0
