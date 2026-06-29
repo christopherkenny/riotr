@@ -21,9 +21,10 @@ Imports:
     httr2,
     purrr,
     tibble
-Suggests: 
+Suggests:
     testthat (>= 3.0.0),
-    vcr (>= 2.0.0)
+    vcr (>= 2.0.0),
+    withr
 Depends: 
     R (>= 4.1.0)
 Config/testthat/edition: 3
